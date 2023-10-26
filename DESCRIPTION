@@ -10,3 +10,5 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 Import: rjson, plyr, data.table
+URL: https://github.com/nrozema211/dwdata
+BugReports: https://github.com/nrozema211/dwdata/issues
