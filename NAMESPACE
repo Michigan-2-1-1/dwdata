@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+import(rjson)
+importFrom(data.table, fread)
+importFrom(plyr, rbind.fill)
+
