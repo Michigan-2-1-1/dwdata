@@ -6,12 +6,12 @@ load_dw <- function(data_source, table_name) {
 
   api_url <- paste0("https://mi211storagev2.blob.core.windows.net/curated/",
                     data_source, "/model.json")
-  api_parameters <- paste0("?sv=2021-04-10&",
-                       "st=2022-12-13T22%3A31%3A08Z&",
-                       "se=2023-12-14T22%3A31%3A00Z&",
+  api_parameters <- paste0("?sv=2023-01-03&",
+                       "st=2024-01-03T15%3A10%3A51Z&",
+                       "se=2025-12-04T15%3A10%3A00Z&",
                        "sr=c&",
                        "sp=rl&",
-                       "sig=NLhfbJwdpgIodlsQXN%2Bpiq37REvYCvpD5kjx2qV678s%3D")
+                       "sig=5qH5R6HSZ6LKhywKKG%2BToT9Rs%2FL6aZrmMOdQQlYBDaY%3D")
   model <- fromJSON(file = paste0(api_url, api_parameters))
 
   table_names <- sapply(model$entities, function(x) x$name)
